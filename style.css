@@ -1,0 +1,45 @@
+/* 1. Style du conteneur pour centrer le contenu */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+    margin-top: 50px;    /* Marge supérieure pour l'espacement */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Style de la boîte de couleur */
+#color-box {
+    width: 300px;        /* Largeur fixe */
+    height: 200px;       /* Hauteur fixe */
+    background-color: #e0e0e0; /* Couleur grise par défaut */
+    border: 2px solid #333;
+    border-radius: 15px; /* Coins arrondis */
+    margin: 30px 0;      /* Espacement haut/bas */
+    transition: background-color 0.4s ease; /* Transition douce pour le changement de couleur */
+}
+
+/* 3. Style du bouton pour le rendre attrayant */
+#change-color-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4CAF50; /* Vert par défaut */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+/* Effet au survol du bouton */
+#change-color-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Agrandit légèrement le bouton */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Effet au clic (appui) */
+#change-color-btn:active {
+    transform: scale(0.98);
+}
